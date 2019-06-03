@@ -38,3 +38,11 @@ public:
 
 
 };
+
+
+//ф-ция поиска по ID
+void searchId(int ID, UniversityWorker& w1, UniversityWorker& w2);
+
+//ф-ция сравнивающий кол-во детей
+bool childrenAmout(UniversityWorker& W1, UniversityWorker& W2);
+//Функции для реализации заданий **********************************

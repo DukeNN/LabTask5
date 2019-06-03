@@ -25,7 +25,7 @@ UniversityWorker::UniversityWorker(int Id, string n, string s, string a, int ch,
 // Реализация методов класса
 UniversityWorker::~UniversityWorker()
 {
-	cout << "Объект удалён\n";
+	//cout << "Объект удалён UniversetyWorker"<<endl;
 }
 
 int UniversityWorker::getID()
@@ -96,4 +96,29 @@ void UniversityWorker::setBirthday(string birthday)
 string UniversityWorker::getBirthday()
 {
 	return birthday;
+}
+
+
+void searchId(int ID, UniversityWorker& w1, UniversityWorker& w2)
+{
+	if (w1.getID() == ID) {
+		cout << w1.getName();
+		cout << w1.getSurname();
+		cout << w1.getGender();
+		cout << w1.getBirthday();
+	}
+	else if (w2.getID() == ID) {
+		cout << w2.getName();
+		cout << w2.getSurname();
+		cout << w2.getGender();
+		cout << w2.getBirthday();
+	}
+	else cout << "Работника с таким номером не сужествует ";
+	
+}
+
+bool childrenAmout(UniversityWorker& W1, UniversityWorker& W2)
+{
+	if (W1.getChildren() == W2.getChildren()) return true;
+	else return false;
 }
