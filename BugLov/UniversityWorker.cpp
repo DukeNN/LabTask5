@@ -4,19 +4,19 @@ UniversityWorker::UniversityWorker()
 	ID = 0;
 	name = "";
 	surname = "";
-	address = "";
+	strcpy(address, "");
 	birthday = "";
 	children = 0;
 	gender = "";
 
 }
 
-UniversityWorker::UniversityWorker(int Id, string n, string s, string a, int ch, string g, string b)
+UniversityWorker::UniversityWorker(int Id, string n, string s, char a[], int ch, string g, string b)
 {
 	this->ID = Id;
 	this->name = n;
 	this->surname = s;
-	this->address = a;
+	strcpy(address, a); 
 	this->children = ch;
 	this->gender = g;
 	this->birthday = b;
@@ -58,9 +58,9 @@ string UniversityWorker::getSurname()
 	return surname;
 }
 
-void UniversityWorker::setAddress(string address)
+void UniversityWorker::setAddress(char addres[])
 {
-	this->address = address;
+	strcpy(address,addres);
 }
 
 string UniversityWorker::getAddress()
@@ -102,16 +102,16 @@ string UniversityWorker::getBirthday()
 void searchId(int ID, UniversityWorker& w1, UniversityWorker& w2)
 {
 	if (w1.getID() == ID) {
-		cout << w1.getName();
-		cout << w1.getSurname();
-		cout << w1.getGender();
-		cout << w1.getBirthday();
+		cout << w1.getName()<<" ";
+		cout << w1.getSurname()<<" ";
+		cout << w1.getGender()<<" ";
+		cout << w1.getBirthday()<<" ";
 	}
 	else if (w2.getID() == ID) {
-		cout << w2.getName();
-		cout << w2.getSurname();
-		cout << w2.getGender();
-		cout << w2.getBirthday();
+		cout << w2.getName()<<" ";
+		cout << w2.getSurname()<<" ";
+		cout << w2.getGender()<<" ";
+		cout << w2.getBirthday()<<" ";
 	}
 	else cout << "–аботника с таким номером не сужествует ";
 	

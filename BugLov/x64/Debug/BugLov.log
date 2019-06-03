@@ -1,2 +1,23 @@
 ﻿  main.cpp
-  BugLov.vcxproj -> C:\Users\Mihail\Desktop\LR5oop\LabTask5\x64\Debug\BugLov.exe
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\main.cpp(9,152): error C2440:  <function-style-cast>: невозможно преобразовать "initializer list" в "UniversityWorker"
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\main.cpp(9,152): message :  Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\main.cpp(12,37): error C2664:  "void UniversityWorker::setAddress(char [])": невозможно преобразовать аргумент 1 из "const char [12]" в "char []"
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\main.cpp(12,16): message :  При преобразовании из строкового литерала теряется квалификатор (см. /Zc:strictStrings)
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\main.cpp(20,37): error C2664:  "void UniversityWorker::setAddress(char [])": невозможно преобразовать аргумент 1 из "const char [12]" в "char []"
+  Menu.cpp
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\main.cpp(20,16): message :  При преобразовании из строкового литерала теряется квалификатор (см. /Zc:strictStrings)
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\Menu.cpp(52,78): error C2664:  "void UniversityWorker::setAddress(char [])": невозможно преобразовать аргумент 1 из "std::string" в "char []"
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\Menu.cpp(52,71): message :  Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\Menu.cpp(65,78): error C2664:  "void UniversityWorker::setAddress(char [])": невозможно преобразовать аргумент 1 из "std::string" в "char []"
+  UniversityWorker.cpp
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\Menu.cpp(65,71): message :  Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\UniversityWorker.cpp(7,1): error C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\string.h(133): message :   см. объявление "strcpy"
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\UniversityWorker.cpp(19,1): error C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\string.h(133): message :   см. объявление "strcpy"
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\UniversityWorker.cpp(63,1): error C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\string.h(133): message :   см. объявление "strcpy"
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\UniversityWorker.cpp(67,1): error C2556:  std::string UniversityWorker::getAddress(void): перегруженная функция отличается от "char *UniversityWorker::getAddress(void)" только возвращаемым типом
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\UniversityWorker.h(31): message :   см. объявление "UniversityWorker::getAddress"
+  Создание кода...
+C:\Users\Mihail\Desktop\LR5oop\LabTask5\BugLov\UniversityWorker.cpp(67,1): error C2040:  UniversityWorker::getAddress: "std::string (void)" отличается по уровням косвенного обращения от "char *(void)"

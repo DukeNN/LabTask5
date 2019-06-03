@@ -25,11 +25,8 @@ int main()
 	W3.setID(5555963);
 	W3.setGender("Женский");
 
-	//Menu menu=Menu();
+	Menu menu=Menu();
 
-	//task3(W1, W2);
+	menu.showMenu();
 	
-	//menu.showMenu();
-	searchId(2281337,W1,W3);
-	getchar();
 }
