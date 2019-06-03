@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "RUS");
-	UniversityWorker W1 = UniversityWorker(2281337, "Анна", "Виталевна", "Страмынка 76", 3, "женщина", "11 января 1971");
+	UniversityWorker W1 = UniversityWorker(2281337, "Анна", "Петрова", "Страмынка 76", 3, "женщина", "11 января 1971");
 	UniversityWorker W2;
 	UniversityWorker W3;
 	W2.setAddress("Тверская 12");
@@ -25,11 +25,8 @@ int main()
 	W3.setID(5555963);
 	W3.setGender("Женский");
 
-	//Menu menu=Menu();
+	Menu menu=Menu();
+	menu.showMenu();
 
-	//task3(W1, W2);
-	
-	//menu.showMenu();
-	searchId(2281337,W1,W3);
 	getchar();
 }

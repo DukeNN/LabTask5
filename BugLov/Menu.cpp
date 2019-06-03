@@ -25,16 +25,16 @@ void Menu::showMenu()
 		{
 		case 1: {
 
-			//inputData(p1);
+			inputData1();
 			cout << "Заглушка 1";
 			break;
 		}
 		case 2: {
-			//inputData(p2);
+			inputData2();
 			cout << "Заглушка 2";
 			break; }
-		case 3: {cout<<"Заглушка 3"; break; }
-		case 4: {cout << "Заглушка 3";; break; }
+		case 3: {task2(p1,p2); break; }
+		case 4: {task3(p1,p2); break; }
 		case 0: {cout << "Выход из программы";; break; }
 		default: cout << "Введена неправельная команда";
 
@@ -76,7 +76,7 @@ UniversityWorker Menu::getP2()
 {
 	return p2;
 }
-/*void task2(UniversityWorker& p1, UniversityWorker& p2)
+void task2(UniversityWorker& p1, UniversityWorker& p2)
 {
 	int ID;
 	cout << "Введите номер сотрудника: "; cin >> ID;
@@ -92,4 +92,3 @@ void task3(UniversityWorker& w1, UniversityWorker& w2)
 		cout << "Кол-во детей разное";
 	}
 }
-*/
