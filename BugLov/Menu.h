@@ -1,5 +1,7 @@
 #pragma once
 #include"UniversityWorker.h"
+#include<iostream>
+using namespace std;
 class Menu
 {
 private:

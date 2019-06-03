@@ -1,6 +1,6 @@
 #include<iostream>
 #include"Windows.h"
-#include"UniversityWorker.h"
+#include"Menu.h"
 using namespace std;
 
 int main()
@@ -24,8 +24,11 @@ int main()
 	W3.setID(5555963);
 	W3.setGender("Женский");
 
+	Menu menu;
+
 
 	setlocale(LC_ALL, "RUS"); //установка русского языка в консоле 
-	cout << W1.getName();
+	
+	menu.showMenu();
 	getchar();
 }
