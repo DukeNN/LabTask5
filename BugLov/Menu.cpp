@@ -76,7 +76,7 @@ UniversityWorker Menu::getP2()
 {
 	return p2;
 }
-void task2(UniversityWorker& p1, UniversityWorker& p2)
+/*void task2(UniversityWorker& p1, UniversityWorker& p2)
 {
 	int ID;
 	cout << "Введите номер сотрудника: "; cin >> ID;
@@ -92,3 +92,4 @@ void task3(UniversityWorker& w1, UniversityWorker& w2)
 		cout << "Кол-во детей разное";
 	}
 }
+*/
